@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="event.js"></script> 
+    <title>Hal</title>
+</head>
+<body>
+    <div>
+        <h1>Title</h1>
+        <p>Írd be a megfelelő hal nevét és a végén kapsz egy képet. A mezőkben látható a betűk száma segítségként.</p>
+        <p>A jó válasz mezője elhalványul és megjelenik egy kép</p>
+        <form onsubmit="return false">
+            <p>                   <!--Betűk száma és a maxlength megegyezik-->
+                <input type="text" id="t1" placeholder="5 betű" maxlength="5">
+                <input type="text" id="t2" placeholder="7 betű" maxlength="7">
+                <input type="text" id="t3" placeholder="5 betű" maxlength="5">
+            </p>
+            <p>
+                <input type="text" id="t4" placeholder="5 betű" maxlength="5">
+                <input type="text" id="t5" placeholder="5 betű" maxlength="5">
+                <input type="text" id="t6" placeholder="5 betű" maxlength="5">
+            </p>
+            <p>
+                <input type="text" id="t7" placeholder="5 betű" maxlength="5">
+                <input type="text" id="t8" placeholder="6 betű" maxlength="6">
+                <input type="text" id="t9" placeholder="6 betű" maxlength="6">
+            </p>
+            <input type="submit" name="kész" value="Kész" onclick="kesz()">
+        </form>
+        <br>
+        <table>
+            <tr>
+                <td id="td1"></td>
+                <td id="td2"></td>
+                <td id="td3"></td>
+            </tr>
+            <tr>
+                <td id="td4"></td>
+                <td id="td5"></td>
+                <td id="td6"></td>
+            </tr>
+            <tr>
+                <td id="td7"></td>
+                <td id="td8"></td>
+                <td id="td9"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
